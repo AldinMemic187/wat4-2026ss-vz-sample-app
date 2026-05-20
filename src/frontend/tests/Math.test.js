@@ -13,6 +13,7 @@ test('7919 is a prime number', () => {
   expect(actual).toStrictEqual(expected);
 });
 
+
 describe('isPrime', () => {
   test.each([2, 3, 5, 7])("when input is '%d' returns true", n => {
     const expected = true;
