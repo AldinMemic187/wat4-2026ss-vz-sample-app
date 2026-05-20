@@ -37,5 +37,6 @@ curl --proto "=https" --tlsv1.2 -sSf -Lo actions-runner-linux-x64-latest.tar.gz 
   "$(curl --proto "=https" --tlsv1.2 -sSf -L https://api.github.com/repos/actions/runner/releases/latest \
      | jq '.assets[] | select(.name | contains("actions-runner-linux-x64-")).browser_download_url' -r)"
 
+
 tar vxzf ./actions-runner-linux-x64-latest.tar.gz
 rm -f ./actions-runner-linux-x64-latest.tar.gz
